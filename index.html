@@ -2,5 +2,269 @@
 <html>
 <head>
 	<title>旧梦梦主页</title>
+<style>
+			blockquote,body,button,dd,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,hr,input,legend,li,ol,p,pre,td,textarea,th,ul{margin:0;padding:0}body,button,input,select,textarea{font:12px/1.5 tahoma,arial,'Hiragino Sans GB',\5b8b\4f53,sans-serif}h1,h2,h3,h4,h5,h6{font-size:100%}address,cite,dfn,em,var{font-style:normal}code,kbd,pre,samp{font-family:courier new,courier,monospace}small{font-size:12px}ol,ul{list-style:none}a{text-decoration:none}sup{vertical-align:text-top}sub{vertical-align:text-bottom}legend{color:#000}fieldset,img{border:0;display: block;}button,input,select,textarea{font-size:100%}table{border-collapse:collapse;border-spacing:0}
+	</style>
+	<style type="text/css">
+		body{
+			background: #efefef; 
+		}
+		header{
+			box-sizing: border-box;
+			width: 1100px;
+			height: 156px;
+			margin: 0 auto;
+			padding: 40px 0px;
+		}
+		header h1{
+				font: 45px/56px '新宋体',sans-serif;
+		}
+		header h4{
+				font: 15px/20px '新宋体',sans-serif;
+		}
+		nav {
+			background: #222;
+		}
+		#main{
+			width: 1100px;
+			margin: 0 auto;
+			margin-top: 20px;
+		}
+		#zuo{
+			width: 805px;
+	 		float: left;
+		}
+		#you{
+			width: 275px;
+			float:right;
+		}
+		nav ul{
+			width: 1100px;
+			height: 60px;
+			margin: 0 auto;
+		}
+		nav li{
+			position: relative;
+			float: left;
+		}
+		li>img {
+			position: absolute;
+			top: 0px;
+			right: 0px;
+		}
+		nav a{
+			display: block;
+			padding: 0px 20px;
+			line-height: 60px;
+			color: white;
+			font-size: 15px;
+		}
+		nav a:hover{
+			background: #3f3f3f;
+		}
+		aside{
+			background: white;
+			padding: 40px;
+			margin-bottom: 20px;
+		}
+		aside h4{
+			color: black;
+			font: 20px/24px '微软雅黑',sans-serif;
+			margin-bottom: 30px;
+		}
+		aside a,aside:visited {
+			color: #1e73be;
+			font: 14px/30px '新宋体','宋体',sans-serif;
+		}
+		aside a:hover{
+			color: black;
+		}
+		aside input{
+			box-sizing: border-box;
+			border: 1px solid #cccccc;
+			background: #fafafa;
+			color: #666666;
+			padding: 10px 15px;
+			font-size: 16px;
+			width: 100%;
+		}
+		article{
+			background: white;
+			margin-bottom: 20px;
+			padding: 40px;
+		}
+		article h2{
+			font: 30px/36px '微软雅黑',sans-serif;
+		}
+		article a,article a:visited{
+			color: #1e73be;
+		}
+		article a:hover{
+			color: black;
+		}
+		article p{
+			margin-top: 20px;
+		}
+		.catlink::before{
+			font-family: 'FontAwesome';
+			content: "\f07b";
+		}
+		.comment::before{
+			font-family: 'FontAwesome';
+			content: "\f075";
+		}
+		.entryheader,.entryheader a{
+			color: #666666;
+			font-size: 12px;
+		}
+		.entryheader a:hover{
+			color: #1e73be;
+		}
+		.zt{
+			margin-top: 30px;
+			color: #3a3a3a;
+			font: 15px/20px '新宋体',sans-serif;
+		}
+		#pageber{
+			color: #3a3a3a;
+			font: 17px/22px '新宋体',sans-serif;
+			margin-bottom: 20px;
+		}
+		#pageber a:hover{
+			color: black;
+		}
+		#pageber a,#pagebar a:visited{
+			color: #1e73be;
+		}
+		footer{
+			box-sizing: border-box;
+			height: 65px;
+			background: #222;
+			text-align: center;
+			color: white;
+			font: 17px/22px '微软雅黑',sans-serif; 
+			padding: 20px 0px;
+			clear: both;
+		}
+	</style>
 </head>
+<body>
+	<header>
+		<h1>旧梦梦的主页</h1>
+		<h4>
+			张留辉，测试
+			
+		</h4>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="">导航1</a></li>
+			<li><a href="">导航2</a></li>
+			<li><a href="">导航3</a></li>
+			<li><a href="">导航4</a></li>
+			
+			<li>
+				<a href="<?php echo U("/Admin/Index") ?>" >后台</a>
+			</li>
+			
+		</ul>
+	</nav>
+	<div id="main">
+		<div id="zuo">
+			<article>
+				<h2><a href="">文章测试标题</a></h2>
+				<div class="entryheaner">
+					<time>2017年7月12号</time>
+					by
+					<a href="">作者</a>
+					<a href="" class="catlink">文章分类</a>
+					<a class="comment" href="">8条评论</a>
+				</div>
+				<div class="zt">
+					<p>因为我内心根本没认为酗酒是“坏习惯”，反而觉得酒酣之际，挥斥方遒的样子很牛B，大口喝酒的熊样很“仗义”，内心其实是沾沾自喜的。</p>
+					<p>这种心态下，自然不可能戒酒成功。直到2012年，喝醉后干了件十足的蠢事，脸面尽失。
+					内心感到耻辱，从此把酒戒了，至今五年，再未沾酒。</p>
+					<p>又有些人，说话很冲，喜欢当众让人难堪，他不觉得这是没有礼貌，反而觉得：“我这人比较直”。同时心中又有建立在别人痛苦上的小得意，所以让他改掉说话冲的毛病，恐怕做不到，因为这是在剥夺对方的“得意”。</p>
+				</div>
+			</article><article>
+				<h2><a href="">文章测试标题</a></h2>
+				<div class="entryheaner">
+					<time>2017年7月12号</time>
+					by
+					<a href="">作者</a>
+					<a class="catlink" href="">文章分类</a>
+					<a class="comment" href="">8条评论</a>
+				</div>
+				<div class="zt">
+					<p>因为我内心根本没认为酗酒是“坏习惯”，反而觉得酒酣之际，挥斥方遒的样子很牛B，大口喝酒的熊样很“仗义”，内心其实是沾沾自喜的。</p>
+					<p>这种心态下，自然不可能戒酒成功。直到2012年，喝醉后干了件十足的蠢事，脸面尽失。
+					内心感到耻辱，从此把酒戒了，至今五年，再未沾酒。</p>
+					<p>又有些人，说话很冲，喜欢当众让人难堪，他不觉得这是没有礼貌，反而觉得：“我这人比较直”。同时心中又有建立在别人痛苦上的小得意，所以让他改掉说话冲的毛病，恐怕做不到，因为这是在剥夺对方的“得意”。</p>
+				</div>
+			</article><article>
+				<h2><a href="">文章测试标题</a></h2>
+				<div class="entryheaner">
+					<time>2017年7月12号</time>
+					by
+					<a href="">作者</a>
+					<a class="catlink" href="">文章分类</a>
+					<a class="comment" href="">8条评论</a>
+				</div>
+				<div class="zt">
+					<p>因为我内心根本没认为酗酒是“坏习惯”，反而觉得酒酣之际，挥斥方遒的样子很牛B，大口喝酒的熊样很“仗义”，内心其实是沾沾自喜的。</p>
+					<p>这种心态下，自然不可能戒酒成功。直到2012年，喝醉后干了件十足的蠢事，脸面尽失。
+					内心感到耻辱，从此把酒戒了，至今五年，再未沾酒。</p>
+					<p>又有些人，说话很冲，喜欢当众让人难堪，他不觉得这是没有礼貌，反而觉得：“我这人比较直”。同时心中又有建立在别人痛苦上的小得意，所以让他改掉说话冲的毛病，恐怕做不到，因为这是在剥夺对方的“得意”。</p>
+				</div>
+			</article>
+			<div id="pageber">
+				Pages：&nbsp;
+				1
+				<a href="">2</a>
+				<a href="">3</a>
+				<a href="">4</a>
+				<a href="">5</a>
+				<a href="">6</a>
+				<a href="">Next</a>
+			</div>
+		</div>
+		<div id="you">
+			<aside>
+				<form>
+					<input type="text" name="search">
+				</form>
+			</aside>
+			<aside>
+				<h4>测试标题</h4>
+					<ul>
+						<li><a href="">文章标题1</a>&nbsp;(2)</li>
+						<li><a href="">文章标题2</a>&nbsp;(2)</li>
+						<li><a href="">文章标题3</a>&nbsp;(2)</li>
+						<li><a href="">文章标题4</a>&nbsp;(2)</li>
+					</ul>
+			</aside>
+			<aside>
+				<h4>测试标题</h4>
+					<ul>
+						<li><a href="">文章标题1</a>&nbsp;(2)</li>
+						<li><a href="">文章标题2</a>&nbsp;(2)</li>
+						<li><a href="">文章标题3</a>&nbsp;(2)</li>
+						<li><a href="">文章标题4</a>&nbsp;(2)</li>
+					</ul>
+			</aside>
+			<aside>
+				<h4>测试标题</h4>
+					<ul>
+						<li><a href="">文章标题1</a>&nbsp;(2)</li>
+						<li><a href="">文章标题2</a>&nbsp;(2)</li>
+						<li><a href="">文章标题3</a>&nbsp;(2)</li>
+						<li><a href="">文章标题4</a>&nbsp;(2)</li>
+					</ul>
+			</aside>
+		</div>
+	</div>
+	<footer>
+		Copyright &copy; 2017 · GeneratePress · WordPress
+	</footer>
+</body>
 </html>
